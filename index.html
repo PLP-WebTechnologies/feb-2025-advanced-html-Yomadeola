@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <meta name="author" value="Adegbola Misturah">
+        <title>Web Technologies Week2 Assignment</title>
+    </head>
+    <body>
+        <!--An ordered list with roman numerals-->
+        <h3>Names of Countries</h3>
+        <ol type = "I">
+            <li> Kenya</li>
+            <li> Nigeria</li>
+            <li>South Africa</li>
+            <li>Uganda</li>
+            <li>Zimbabwe</li>
+        </ol>
+
+        <!--An external image from pexels.com-->
+        <img src="img.jpg" alt="Computer networking" width="500" height="400">
+
+        <!--A table of 5 contacts with; name, address, mobile and emails-->
+
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Angela Williams</td>
+                    <td>Lekki, Lagos</td>
+                    <td>08123456789</td>
+                    <td>Williamsangela@yahoo.com</td>
+                </tr>
+                <tr>
+                    <td>Faith Royal</td>
+                    <td>Garki, Abuja</td>
+                    <td>09043435656</td>
+                    <td>RoyalF@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Adeola Emmanuel</td>
+                    <td>Ikeja, Lagos</td>
+                    <td>07012897632</td>
+                    <td>Emmanueladeola@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Richard Samson</td>
+                    <td>Garki, Abuja</td>
+                    <td>09123454321</td>
+                    <td>Richard_24@yahoo.com</td>
+                </tr>
+                <tr>
+                    <td>Salmaan Rahman</td>
+                    <td>Tanke, Ilorin</td>
+                    <td>07098765432</td>
+                    <td>Rahman_Salmaan25@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--A registration form-->
+        <form action="#" method="post">
+            <fieldset>
+                <legend><b>Registration Form</b></legend>
+                <div>
+                    <lable for="fname">Enter your first name</lable><br>
+                    <input type="text" id="fname" name="fname" required>
+                </div>
+                
+                <div>
+                    <lable for="lname">Enter your last name</lable><br>
+                    <input type="text" id="lname" name="lname" required>
+                </div>
+
+                <div>
+                    <lable for="email">Enter your email</lable><br>
+                    <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+                </div>
+
+                <div>
+                    <lable for="dob">Date of Birth</lable><br>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <div>   
+                    <p>Gender</p>                 
+                    <input type="radio" id="gender" name="gender" value="male"> 
+                    <label for="gender">Male </label><br>
+                    <input type="radio" id="gender" name="gender" value="female"> 
+                    <label for="gender">Female </label><br>
+                    <input type="radio" id="gender" name="gender" value="none"> 
+                    <label for="gender">Prefer not to say </label><br>                    
+                </div>
+
+                <div>
+                    <label for ="Country">Country of Residence </label><br>
+                    <select name="Country">
+                        <option value=""> Select your country</option>
+                        <option value="Kenya"> Kenya</option>
+                        <option value="Nigeria"> Nigeria</option>
+                        <option value="Uganda"> Uganda</option>
+                        <option value="South Africa"> South Africa</option>
+                    </select>
+                </div>
+
+                <div>   
+                    <p>Which social platform do you use</p>                 
+                    <input type="checkbox" id="social" name="social" value="Whatsapp"> 
+                    <label for="social">Whatsapp</label><br>
+                    <input type="checkbox" id="social" name="social" value="Facebook"> 
+                    <label for="social">Facebook</label><br>
+                    <input type="checkbox" id="social" name="social" value="Instagram"> 
+                    <label for="social">Instagram</label><br>                 
+                    <input type="checkbox" id="social" name="social" value="X"> 
+                    <label for="social">X</label><br>
+                    <input type="checkbox" id="social" name="social" value="Telegram"> 
+                    <label for="social">Telegram</label><br>
+                </div>
+
+                <div>
+                    <label for="password">Enter your password </lable><br>
+                    <input type="password" id="password" name="password" required pattern ="[a-zA-Z0-9]{8}" title="Password must be 8 alphanumeric characters"><br>
+                </div>
+
+            </fieldset>
+
+            <button>Submit</button>
+        </form>
+    </body>
+</html>
